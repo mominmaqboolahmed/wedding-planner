@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jssor.slider-27.5.0.min.js"></script>
+  <link rel='stylesheet prefetch' href='css/normalize.min.css'>
+
+        <!-- <link rel="canonical" href="https://codepen.io/shamim539/pen/OxPXdv?depth=everything&order=popularity&page=13&q=vue+js&show_forks=false" /> -->
+
+</head>
+<body>
+ <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="img/logo.new.png" style="width:250px;height:130px;" class="img-fluid" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto laptop">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="color:red;">Home<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link customer" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="package.html">Package</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        	<i class="fa fa-search"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#"><input type="text"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!-- header end  -->
+<!-- slider start  -->
+<script>
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-0.7}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:450px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/SIDER.554.png" alt="img-1" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/IMAGE-15.png" alt="img-2" />
+                <div data-t="0" data-ts="preserve-3d" style="position:absolute;top:10px;left:355px;width:470px;height:220px;">
+                    <div style="position:absolute;top:150px;left:30px;width:100%;height:130px;font:30px Arial;color:white;text-align:center;padding:5px 5px 5px 5px;background-clip:padding-box">
+<br />
+                    CREATIVE WEDDING PLANNER
+                </div>
+                <div style="position:absolute;top:250px;left:30px;width:100%;height:130px;font-family:'Roboto Condensed',sans-serif;font:30px Alex Brush;color:white;padding:5px 5px 5px 5px;text-align:center;background-clip:padding-box">
+                  We make your dream come true
+                </div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/IMAGE-16.png" alt="img-3" />
+                <div style="position:absolute;top:150px;left:30px;width:100%;height:130px;font:30px Arial;color:white;text-align:center;padding:5px 5px 5px 5px;background-clip:padding-box">
+<br />
+                    CREATIVE WEDDING PLANNER
+                </div>
+                <div style="position:absolute;top:250px;left:30px;width:100%;height:130px;font-family:'Roboto Condensed',sans-serif;font:30px Alex Brush;color:white;padding:5px 5px 5px 5px;text-align:center;background-clip:padding-box">
+                  We make your dream come true
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/IMAGE-17.png" alt="img-4" />
+                <div style="position:absolute;top:100px;left:220px;width:100%;height:130px;font:30px Arial;color:white;text-align:center;padding:5px 5px 5px 5px;background-clip:padding-box">
+<br />
+                    CREATIVE WEDDING PLANNER
+                </div>
+                <div style="position:absolute;top:200px;left:220px;width:100%;height:130px;font-family:'Roboto Condensed',sans-serif;font:30px Alex Brush;color:white;padding:5px 5px 5px 5px;text-align:center;background-clip:padding-box">
+                  We make your dream come true
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/SIDER01.png" alt="img-5" />
+                <div style="position:absolute;top:50px;left:100px;width:100%;height:130px;font:30px Arial;color:white;padding:5px 5px 5px 5px;background-clip:padding-box">
+<br />
+                    CREATIVE WEDDING PLANNER
+                </div>
+                <div style="position:absolute;top:150px;left:140px;width:100%;height:130px;font-family:'Roboto Condensed',sans-serif;font:30px Alex Brush;color:white;padding:5px 5px 5px 5px;background-clip:padding-box">
+                  We make your dream come true
+                </div>
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+<!-- slider end  -->
+
+
+
+
+  <div class="plan">
+    <div class="container">
+      <div class="text">
+        <h2>Our Services</h2>
+        <img src="img/text-design.png" alt=""/>
+        <p>We cover weddings, parties ,corporate events etc. using high tech HD equipments.</p>
+      </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="onethird">
+          <img src="img/one-third-new-3.jpg" alt=""/>
+          <h4>Entertainment</h4>
+          <img src="img/hr-1.png" alt=""/>
+          <p>There is no wedding without music, move,<br> dholaks or chimes. There are a wide range<br> of advancing occasions spread
+          more than<br> 2-3 days to entice your visitors...</p>
+          <a href="service-link-1.html">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="onethird">
+          <img src="img/one-third-new-2.jpg" alt=""/>
+          <h4>Photographers</h4>
+          <img src="img/hr-1.png" alt=""/>
+          <p>Our photographers that are specially<br> trained in social photography services <br>will be deployed in keeping your <br>memories live forever...</p>
+          <a href="service-link-2.html">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="onethird">
+          <img src="img/one-third-new-1.jpg" alt=""/>
+          <h4>VIDEO Cinematography</h4>
+          <img src="img/hr-1.png" alt=""/>
+          <p>Our photographers that are specially<br> trained in social photography services <br>will be deployed in keeping your <br>memories live forever...</p>
+          <a href="service-link-3.html">Read More</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="about clearfix">
+    <div class="container">
+      <aside>
+        <h3>About <span>Us</span></h3>
+        <p>Our customers attest that we're a technically professional and innovative crew<br> of photographers who have devoted following based totally on talents, precise<br> humor and the potential to work correctly below pressure. Nerds in the studio,<br> we're very customer orientated and very social whilst it gets to commercial<br> enterprise. We pick a meet & greet with every client for dialogue and proportion<br> thoughts and understand requirements in addition for that “best hit”.<br>
+          <br>
+        
+        While we are saying we are photographers and dream weavers, we suggest that<br> in the truest feel of the word. Our historical past in carried out arts, schooling     as<br> visualizes & copywriters and years of fingers-on enjoy has encouraged the way<br> weave your wedding ceremony day goals into a life-time of unforgettable<br> reminiscences. While wedding ceremony pics show actual moments, and wedding<br> motion pictures show the real motions – that is after they resonate through your<br> existence, and the lives of those that come after us.</p>
+      </aside>
+      <article>
+        <img src="img/ABOUT.png" alt=""/>
+      </article>
+    </div>
+  </div>
+  <div class="services clearfix">
+    <div class="container">
+      <div class="text clearfix">
+        <h2>Our Packages</h2>
+        <img src="img/text-design.png" alt=""/>
+        <p>We cover weddings, parties ,corporate events etc. using high tech HD equipments.</p>
+      </div>
+      
+      <div class="row">
+		
+	<div class="col-lg-4">
+      <div class="service-left clearfix">
+        <div class="text-serv">
+          <h2>Silver Package</h2>
+          <div class="bdr-one"></div>
+          <ul>
+            <li>
+              <i class="fa fa-circle"></i>
+                <p>Portraits of Bride & Groom in 1 Style Album.</p>
+            </li>
+            <li>
+              <i class="fa fa-circle"></i>
+                <p>Family Portraits and Full Event Coverage in 1 Exclusive Style Album.</p>
+            </li>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Full HD video on USB and DVD. </p>
+            </li>
+          </ul>
+          <a href="package-link-1.html" class="second-anchor">Read more</a>
+        </div>       
+      </div>
+  </div><!-- col-md-4 -->
+
+ 	<div class="col-lg-4"> 
+      <div class="service-left clearfix">
+        <div class="text-serv">
+          <h2>Gold Package</h2>
+          <div class="bdr-one"></div>
+          <ul>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Portraits of Bride & Groom in 1 Style Album.</p>
+            </li>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Family Portraits and Full Event Coverage in 1 Exclusive Style Album.</p>
+            </li>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Full HD video on USB and DVD. </p>
+            </li>
+          </ul>
+          <a href="package-link-2.html" class="second-anchor">Read more</a>
+        </div>
+    	</div>
+     </div>
+
+     <div class="col-lg-4"> 
+      <div class="service-left clearfix">
+        <div class="text-serv">
+          <h2>Daimond Package</h2>
+          <div class="bdr-one"></div>
+          <ul>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Portraits of Bride & Groom in 1 Style Album.</p>
+            </li>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Family Portraits and Full Event Coverage in 1 Exclusive Style Album.</p>
+            </li>
+            <li>
+              <i class="fa fa-circle"></i>
+              <p>Full HD video on USB and DVD. </p>
+            </li>
+          </ul>
+          <a href="package-link-3.html" class="second-anchor">Read more</a>
+        </div>
+    	</div>
+     </div>
+  	</div><!-- row -->
+
+    </div>
+  </div>
+  <div class="dream">
+    <img src="img/dream-img-1.PNG" class="img-fluid" alt=""/>
+  </div>
+  <div class="slider-three">
+    <div class="container">
+      <div class="text">
+        <h2>Our Profile</h2>
+        <img src="img/text-design-2.png" alt=""/>
+        <p>We cover weddings, parties ,corporate events etc. using high tech HD equipments.</p>
+      </div>
+    </div>
+
+    <!--start slider-->
+    <div class="container">
+    <div class="row">
+    <!-- for more info please get touch with me by droping a email to me   akj114912@gmail.com -->
+      <div id="wrapper">
+      <div id="image">
+        <div class="image i1"><a href="profile.html"><img src="img/profile-0..png" alt="img"></a></div>
+        <div class="image i2"><a href="profile.html"><img src="img/profile-03.png" alt="img"></a></div>
+        <div class="image i3"><a href="profile.html"><img src="img/profile-02.png" alt="img"></a></div>
+        <div class="image i4"><a href="profile.html"><img src="img/profile-04.png" alt="img"></a></div>
+        <div class="image i5"><a href="profile.html"><img src="img/profile-05.png" alt="img"></a></div>
+        <div class="image i6"><a href="profile.html"><img src="img/profile-06.png" alt="img"></a></div>
+        <div class="image i7"><a href="profile.html"><img src="img/profile-7.png" alt="img"></a></div>
+        <div class="image i8"><a href="profile.html"><img src="img/profile-08.png" alt="img"></a></div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <!--end slider-->
+
+
+        <div class="footer-img clearfix">
+          <img src="img/footer-final-2.png" alt=""/>
+        </div>
+
+      <footer class="clearfix">
+        <div class="container clearfix">
+        <div class="footer-txt">
+          <p>&copy; Copyrights SSintermedia.com 2018 .. Designer By <span>Momin Maqbool Ahmed</span></p>
+          <ul>
+            <li><i><a href="#" class="fa fa-facebook"></a></i></li>
+            <li><i><a href="#" class="fa fa-twitter"></a></i></li>
+            <li><i><a href="#" class="fa fa-instagram"></a></i></li>
+            <li><i><a href="#" class="fa fa-google"></a></i></li>
+          </ul>         
+        </div>
+        </div>
+      </footer>
+    </div>
+  
+  
+</body>
+</html>
+
+
